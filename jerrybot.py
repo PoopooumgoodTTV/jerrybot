@@ -5,10 +5,10 @@ from discord.ext import commands
 import os
 
 # Bot configuration
-JERRYBOT_TOKEN = os.getenv('JERRYBOT_TOKEN')
+JERRYBOT_TOKEN = os.getenv('MTI2NTE1NDI5NTkyNjM1ODA3Nw.GFwEOX.DNkwIEFI87w1uY2GwuYlUmQRGAD9cYmW2QegDc')
 CHANNEL_NAME = os.getenv('CHANNEL_NAME')
 JERRYBOT_DEBUG = os.getenv('JERRYBOT_DEBUG', 'False').lower() == 'true'
-SERVER_ID = os.getenv('SERVER_ID')
+SERVER_ID = os.getenv('1242309689052758077')
 
 
 # Beware some type issues sckank found on Win11. Maybe.
@@ -34,9 +34,9 @@ async def find_channel_by_name(guild, channel_name):
     return discord.utils.get(guild.channels, name=channel_name)
 
 async def duplicate_channel():
-    guild = bot.get_guild(SERVER_ID)
+    guild = bot.get_guild(1242309689052758077)
     if not guild:
-        log(f"Error: Could not find server with ID {SERVER_ID}")
+        log(f"Error: Could not find server with ID {1242309689052758077)
         return
 
     original_channel = await find_channel_by_name(guild, CHANNEL_NAME)
@@ -82,4 +82,4 @@ async def on_ready():
     await duplicate_channel()
     await bot.close()
 
-bot.run(JERRYBOT_TOKEN)
+bot.run(MTI2NTE1NDI5NTkyNjM1ODA3Nw.GFwEOX.DNkwIEFI87w1uY2GwuYlUmQRGAD9cYmW2QegDc)
