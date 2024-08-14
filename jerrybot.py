@@ -5,7 +5,7 @@ from discord.ext import commands
 import os
 
 # Bot configuration
-JERRYBOT_TOKEN = os.getenv('MTI2NTE1NDI5NTkyNjM1ODA3Nw.GFwEOX.DNkwIEFI87w1uY2GwuYlUmQRGAD9cYmW2QegDc')
+JERRYBOT_TOKEN = os.getenv''')
 CHANNEL_NAME = os.getenv('CHANNEL_NAME')
 JERRYBOT_DEBUG = os.getenv('JERRYBOT_DEBUG', 'False').lower() == 'true'
 SERVER_ID = os.getenv('1242309689052758077')
@@ -82,4 +82,4 @@ async def on_ready():
     await duplicate_channel()
     await bot.close()
 
-bot.run(MTI2NTE1NDI5NTkyNjM1ODA3Nw.GFwEOX.DNkwIEFI87w1uY2GwuYlUmQRGAD9cYmW2QegDc)
+bot.run()
